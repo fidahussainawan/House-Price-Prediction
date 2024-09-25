@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1528702748617-c64d49f918af?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #f9d342;
+        }
+        label {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #f9d342;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #f1c40f;
+        }
+        input {
+            background-color: #2c3e50;
+            color: white;
+        }
+        input[type="number"] {
+            max-width: 100px;
+        }
+        .prediction {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">House Price Prediction</h1>
+        <p class="text-center">Fill in the property details to predict its price.</p>
+        <form action="/predict" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="CRIM">CRIM (Crime Rate)</label>
+                    <input type="number" class="form-control" name="CRIM" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="ZN">ZN (Residential Land %)</label>
+                    <input type="number" class="form-control" name="ZN" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="INDUS">INDUS (Non-Retail Business %)</label>
+                    <input type="number" class="form-control" name="INDUS" step="any" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="CHAS">CHAS (Charles River)</label>
+                    <input type="number" class="form-control" name="CHAS" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="NOX">NOX (Nitric Oxides Concentration)</label>
+                    <input type="number" class="form-control" name="NOX" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="RM">RM (Avg. Rooms/Dwelling)</label>
+                    <input type="number" class="form-control" name="RM" step="any" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="AGE">AGE (Older Units %)</label>
+                    <input type="number" class="form-control" name="AGE" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="DIS">DIS (Distance to Employment)</label>
+                    <input type="number" class="form-control" name="DIS" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="RAD">RAD (Highway Access)</label>
+                    <input type="number" class="form-control" name="RAD" step="any" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="TAX">TAX (Tax Rate per $10,000)</label>
+                    <input type="number" class="form-control" name="TAX" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="PTRATIO">PTRATIO (Pupil-Teacher Ratio)</label>
+                    <input type="number" class="form-control" name="PTRATIO" step="any" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="B">B (African American Proportion)</label>
+                    <input type="number" class="form-control" name="B" step="any" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="LSTAT">LSTAT (Lower Status Population %)</label>
+                    <input type="number" class="form-control" name="LSTAT" step="any" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict House Price</button>
+        </form>
+
+        <div class="prediction text-center">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
