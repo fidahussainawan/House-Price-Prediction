@@ -1,6 +1,7 @@
 House Price Prediction Model
 
-Welcome to the House Price Prediction Model repository! 🎉 This project was developed to predict the median value of owner-occupied homes in a specific region by analyzing various socio-economic and geographical factors. It provides users with a simple, intuitive interface to input key property details, and outputs a prediction of the house price based on the trained model.
+Welcome to the House Price Prediction Model repository! 🎉
+This project was developed to predict the median value of owner-occupied homes in a specific region by analyzing various socio-economic and geographical factors. It provides users with a simple, intuitive interface to input key property details, and outputs a prediction of the house price based on the trained model.
 
 📄 Project Overview
 This project uses a Machine Learning algorithm to estimate house prices by analyzing 13 crucial variables such as crime rate, pupil-teacher ratio, proximity to employment centers, and more. The goal is to provide accurate, data-driven predictions for the real estate industry and help users make informed decisions.
@@ -11,6 +12,7 @@ The client requested a web-based application that:
 Predicts house prices based on real estate, environmental, and socio-economic factors.
 Is user-friendly, with a clean and modern design.
 Provides accurate predictions using historical data.
+
 ✨ Key Features Implemented
 User Interface (UI) Design
 Developed a modern, clean, and intuitive interface using HTML, CSS, and JavaScript.
@@ -68,6 +70,7 @@ Clone this repository:
 bash
 Copy code
 git clone https://github.com/yourusername/house-price-prediction.git
+
 Navigate to the project directory:
 bash
 Copy code
@@ -95,7 +98,9 @@ CRIM	ZN	INDUS	RM	TAX	PTRATIO	Predicted Price
 This project is open for enhancements! Here are some ideas for future improvements:
 
 Feature Scaling: Implement advanced scaling techniques for more precise predictions.
+
 Additional Datasets: Integrate other real estate datasets to enhance the model's generalization capability.
+
 Visualization: Include more data visualization tools to provide users with deeper insights into housing trends.
 
 🏆 Conclusion
@@ -105,7 +110,9 @@ This project successfully delivers an accurate and user-friendly House Price Pre
 Feel free to fork this repository, contribute, or use it in your projects!
 
 📧 Contact Information
+
 For questions or collaborations, feel free to reach out:
 
 Email: fidahussainawanofficial@gmail.com
+
 Thank you for visiting the House Price Prediction Model repository! 👋
