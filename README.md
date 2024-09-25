@@ -1,3 +1,6 @@
+![Alt text](./images/your-image.png)
+
+
 House Price Prediction Model
 
 Welcome to the House Price Prediction Model repository! 🎉
