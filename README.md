@@ -1,12 +1,15 @@
 House Price Prediction Model
 
 Welcome to the House Price Prediction Model repository! 🎉
+
 This project was developed to predict the median value of owner-occupied homes in a specific region by analyzing various socio-economic and geographical factors. It provides users with a simple, intuitive interface to input key property details, and outputs a prediction of the house price based on the trained model.
 
 📄 Project Overview
+
 This project uses a Machine Learning algorithm to estimate house prices by analyzing 13 crucial variables such as crime rate, pupil-teacher ratio, proximity to employment centers, and more. The goal is to provide accurate, data-driven predictions for the real estate industry and help users make informed decisions.
 
 🎯 Client Requirements
+
 The client requested a web-based application that:
 
 Predicts house prices based on real estate, environmental, and socio-economic factors.
@@ -14,6 +17,7 @@ Is user-friendly, with a clean and modern design.
 Provides accurate predictions using historical data.
 
 ✨ Key Features Implemented
+
 User Interface (UI) Design
 Developed a modern, clean, and intuitive interface using HTML, CSS, and JavaScript.
 The form allows users to input 13 critical property-related parameters such as crime rate, distance to employment centers, and nitric oxide concentration.
