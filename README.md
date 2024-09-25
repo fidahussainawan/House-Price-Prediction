@@ -1,4 +1,5 @@
 House Price Prediction Model
+
 Welcome to the House Price Prediction Model repository! 🎉 This project was developed to predict the median value of owner-occupied homes in a specific region by analyzing various socio-economic and geographical factors. It provides users with a simple, intuitive interface to input key property details, and outputs a prediction of the house price based on the trained model.
 
 📄 Project Overview
