@@ -1,4 +1,4 @@
-![Alt text](./images/your-image.png)
+![Alt text](Price_prediction.PNG)
 
 
 House Price Prediction Model
